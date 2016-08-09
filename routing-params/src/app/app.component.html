@@ -1,0 +1,6 @@
+<h1>
+  {{title}}
+  <input type="text" #box  (keyup)="0">
+  <a [routerLink] = "['user',{id: box.value}]" >User</a>
+  <router-outlet></router-outlet>
+</h1>
